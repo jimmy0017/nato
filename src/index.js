@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const rootContainer = document.querySelector('#root')
+const rootContainer = document.getElementById('root')
 
 class App extends React.Component {
   constructor (props) {
@@ -143,13 +143,13 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-      	<div class="form-group">
+      	<div className="form-group">
     		<label>Input</label>
-        	<input class="form-control" type="text" value={this.state.value} onChange={this.handleChange}/>
+        	<input className="form-control" type="text" value={this.state.value} onChange={this.handleChange}/>
         </div>
-        <div class="form-group">
+        <div className="form-group">
     		<label>Result</label>
-       		<textarea class="form-control" rows="3" value={this.state.result}/>
+       		<textarea className="form-control" rows="3" value={this.state.result}/>
        	</div>
       </div>
     );
