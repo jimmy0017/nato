@@ -17,7 +17,7 @@ class App extends React.Component {
   	let value = event.target.value.toLowerCase()
   	let result = ''
   	for (var i = 0; i < value.length; i++) {
-	  console.log(value.charAt(i));
+	  // console.log(value.charAt(i));
 	  switch(value.charAt(i)) {
 	    case 'a':
 	        result = result + 'Alpha '
